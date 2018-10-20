@@ -11,7 +11,7 @@
 {% block content %}
 <form method="POST" action="" novalidate>
 	{% csrf_token %}
-	{{form.as_p}}
+	{% include 'boards/includes/form.html' %}
 	<button class="btn btn-success">Post</button>
 </form>
 
