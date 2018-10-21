@@ -1,0 +1,14 @@
+{% extends 'boards/base.html' %}
+
+{% block body %}
+	<div class="container">
+		<h2>Sign Up</h2>
+		<form method="post" novalidate>
+			{% csrf_token %}
+			{% include 'boards/includes/form.html' %}
+			<button type="submit" class="btn btn-primary">
+				Create an account
+			</button>
+		</form>
+	</div>
+{% endblock body %}
